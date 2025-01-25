@@ -1,36 +1,19 @@
-# Login Automation
+# AllOnline 7-Eleven Automation Testing Suite
 
-This automates the login functionality testing. It supports both positive and negative test cases for login scenarios and includes data-driven testing using CSV files.
+This repository contains a sample test automation project for the AllOnline 7-Eleven website. The project is built using the Robot Framework and includes the following features:
 
 ## Project Structure
 
 ```
 /test03
 ├── resources
-│   ├── commons
-│   │   └── browser.resource
-│   └── authentication
-│       ├── login_keywords.resource
-│       └── login_locators.resource
 ├── tests
-│   └── login.robot
-├── data
-│   └── login_testcase.csv
+│   └── ts03.robot
 ├── results
 │   └── pabot_results
 ├── Makefile
 └── requirements.txt
 ```
-
-### Key Directories and Files
-
-- **resources/commons/browser.resource**: Contains browser-related keywords for opening and navigating.
-- **resources/authentication/login_keywords.resource**: Contains reusable keywords specific to login functionality.
-- **resources/authentication/login_locators.resource**: Stores locators for the login page elements.
-- **tests/login.robot**: Test suite for login functionality.
-- **data/login_testcase.csv**: Data file for data-driven testing.
-- **Makefile**: Contains commands to run tests, clean outputs, and more.
-- **requirements.txt**: Lists the dependencies for the project.
 
 ## Setup
 
@@ -72,17 +55,6 @@ make run-parallel
 
 ```bash
 make clean
-```
-
-## Test Data
-
-The `data/login_testcase.csv` file contains the test cases in a tabular format. Each row includes the username, password, expected message, tags, and documentation:
-
-```csv
-*** Test Cases ***,${username},${password},${expected_message},[Tags],[Documentation]
-Login success,tomsmith,SuperSecretPassword!,You logged into a secure area!,"positive,smoke",To verify that a user can login successfully when they put a correct username and password.
-Login failed - Password incorrect,tomsmith,Password!,Your password is invalid!,"negative,smoke",To verify that a user cannot login with a correct username but wrong password.
-Login failed - Username not found,tomholland,SuperSecretPassword!,Your username is invalid!,"negative,smoke",To verify that a user cannot login with a non-existent username.
 ```
 
 ## Test Framework
