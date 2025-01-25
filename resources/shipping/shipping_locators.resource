@@ -1,0 +1,13 @@
+*** Variables ***
+${TAB_ADDRESS}                  //a[@class='tab-address']
+${ADD_ADDRESS_BUTTON}           //div[normalize-space()='+']
+${SHIPPING_HOME_UPDATE_ICON}    //div[@class='dropdown address-dropdown address-0-book']//div//div[@class='shipping-home-update']//img[@loading='lazy']
+${FIRST_NAME_FIELD}             //input[@id='new-address-name']
+${LAST_NAME_FIELD}              //input[@id='new-address-lastname']
+${MOBILE_FIELD}                 //input[@id='new-address-mobile']
+${ADDRESS_NO_FIELD}             //input[@id='new-address-addrno']
+${PROVINCE_SELECT}              //span[@id='select2-new-address-province-container']
+${DISTRICT_SELECT}              //span[@id='select2-new-address-district-container']
+${SUBDISTRICT_SELECT}           //span[@id='select2-new-address-sub-district-container']
+${CLOSE_MAP_MODAL_BUTTON}       //div[@id='gcp-map']//button[@type='button'][normalize-space()='x']
+${CONTINUE_PAYMENT_BUTTON}      //button[@id='continue-payment-btn']

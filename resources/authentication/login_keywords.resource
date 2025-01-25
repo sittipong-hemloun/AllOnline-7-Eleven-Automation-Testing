@@ -5,6 +5,11 @@ Resource    ../commons/browser.resource
 
 
 *** Keywords ***
+Perform Login
+    [Arguments]    ${username}    ${password}
+    Open Login Page
+    Login with user and password    ${username}    ${password}
+
 Open Login Page
     [Documentation]    Opens the Login page using the base URL.
     # Open Maximized Browser And Navigate To    /
