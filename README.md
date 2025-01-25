@@ -2,6 +2,8 @@
 
 This repository contains a sample test automation project for the AllOnline 7-Eleven website. The project is built using the Robot Framework and includes the following features:
 
+![alt text](image.png)
+
 ## Project Structure
 
 ```
