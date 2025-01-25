@@ -12,8 +12,10 @@ Test Teardown       Close Browser
 
 
 *** Variables ***
-${username}             ong22280@gmail.com
-${password}             OngAng300%
+# Credentials will be passed via CLI
+${username}             ${EMPTY}
+${password}             ${EMPTY}
+
 ${expected_message}     Invalid username or password
 ${product_name1}        AMARIT คอลลาเจน 30 แคปซูล
 ${product_name2}        แอคเน่-เอด ไฟว์ อิน วัน วอช ออยล์ คอนโทรล 100 มล.
